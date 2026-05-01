@@ -4,7 +4,8 @@
   "description": "Simple Task API with Prometheus metrics",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"No test yet\" && exit 0"
   },
   "dependencies": {
     "express": "^4.18.2",
