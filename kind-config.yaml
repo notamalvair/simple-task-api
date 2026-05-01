@@ -1,0 +1,14 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  extraPortMappings:
+  - containerPort: 30000   # твой API
+    hostPort: 3002
+    listenAddress: "0.0.0.0"
+  - containerPort: 30090   # Prometheus
+    hostPort: 30090
+    listenAddress: "0.0.0.0"
+  - containerPort: 30091   # Grafana
+    hostPort: 30091
+    listenAddress: "0.0.0.0"
